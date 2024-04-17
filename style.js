@@ -515,14 +515,16 @@ let obj = {
     city:"New York"
 }
 
-// let ans =Object.keys(obj).map(key=>obj[key]);
-// console.log(ans);
+let ans =Object.keys(obj).map(key=>obj[key]);
+console.log(ans);
 
-// let arr=Object.entries(obj);
-// console.log(arr);
+let arr=Object.entries(obj);
+console.log(arr);
 
-// let arr1=Object.values(obj);
-// console.log(arr1);
+let arr1=Object.values(obj);
+console.log(arr1);
 
-// let arr2=Object.keys(obj).map(val=>obj[val]);
-// console.log(arr2);
+let arr2=Object.keys(obj).map(val=>obj[val]);
+console.log(arr2);
+
+
