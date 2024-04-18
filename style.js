@@ -529,11 +529,119 @@
 
 //currying
 
-const add=(a)=>{
-    return (b)=>{
-        return (c)=>{
-            return a-b-c
-        }
-    }
-}
-console.log(add(0)(1)(2))
+// const add=(a)=>{
+//     return (b)=>{
+//         return (c)=>{
+//             return a-b-c
+//         }
+//     }
+// }
+// console.log(add(0)(1)(2))
+
+
+//implement pipe
+
+
+// const add=x=>x+1
+// const sub=x=>x-2
+// const multiply=x=>x*3
+
+// const process=Pipe(add,sub,multiply)
+// let res=process(3)
+// console.log(res);
+
+// const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x)
+// console.log(pipe)
+
+
+// const add = x => x + 1;
+// const multiply = x => x * 2;
+// const subtract = x => x - 3;
+
+// const processValue = pipe(add, multiply, subtract);
+// const result = processValue(5);
+
+// console.log(result); // Output: 9
+
+
+// let data={
+//     name:'Sharmila',
+//     age:30
+// }
+// let ans=Object.keys(data)
+// let ans1=Object.values(data);
+// let ans2=Object.entries(data);
+
+// console.log(ans);
+// console.log(ans1);
+// console.log(ans2);
+
+
+// let data={
+//     a:10
+// }
+// let res=Object.freeze(data)
+// data.a=10;
+// data.c=20;
+
+// console.log(res)
+
+
+// let data={
+//     a:10
+// }
+// let res=Object.seal(data)
+// data.a=20;
+// data.c=20;
+
+// console.log(res)
+
+
+// function*generator(){
+//     yield 1;
+//     yield 2;
+//     yield 3;
+//     return 4;
+// }
+// const gen= generator();
+// console.log(gen.next());
+// console.log(gen.next());
+// console.log(gen.next());
+// console.log(gen.next());
+// console.log(gen.next());
+
+
+// let arr=[2,4,5,6,7,8];
+// let res=arr.slice(1,3);
+
+// console.log(res);
+
+
+// let q=[2,4,6,8,9,5,3,1]
+// let ans=q.splice(1,4,5);
+// console.log(ans);
+
+// setTimeout(fn(),{
+//     console.log("print hello")
+// },2000)
+
+
+
+// let promise = new Promise(function(resolve,reject){
+//     let x="sharmila";
+//     let  y="sharmila";
+
+// if(x==y){ 
+//     resolve("valid")
+// }else{
+//     let e=new Error("Invalid")
+//     reject(e)
+// }
+//   promise.then((res)=>{
+//     console.log("success",res)
+//   }).catch((e)=>{
+//     console.log("failed",e)
+//   })
+
+// })
+   
